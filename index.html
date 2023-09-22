@@ -1,92 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Basic template</title>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/popcorn.transitions.css">
-    <link rel="stylesheet" href="css/fonts/digital-strip.css">
-    <link rel="stylesheet" href="css/fonts/comic-fx.css">
-    <link rel="stylesheet" href="css/icons/glyphish_custom.css">
-    <!--<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"/>-->
-    <script src="https://browserid.org/include.js" type="text/javascript" data-butter-exclude></script>
-    <script src="butter/src/butter.js" data-butter-exclude /></script>
-     <script src="js/butter.template.js" data-butter-exclude /></script>
-    <script type="text/javascript" src="main.js" data-butter-exclude /></script>
-    <script src="js/libs/jquery-1.7.2.min.js"></script>
-    <script src="js/libs/jquery-ui.min.js"></script>
-    <script src="js/libs/mustache.js"></script>
-    <style>
-        /* EDITING */
-        *[contenteditable=true] {
-          border: 1px solid #E1182B;
-          -webkit-transition: all .3s;
-        }
-        *[contenteditable=true]:focus{ outline: none;}
-
-        .ui-resizable-handle { display: none; }
-        .ui-resizable:hover .ui-resizable-handle {
-          background: #EEE;
-          background-position: -64px -224px;
-          background-image: url(css/icons/ui-icons-blue.png);
-        }
-        .ui-resizable-handle {
-          position: absolute;
-          font-size: 0.1px;
-          display: block;
-          background: #EEE;
-          background-image: url(css/icons/ui-icons.png);
-          background: none;
-          background-position: -64px -224px;
-          }
-        .ui-resizable-se {
-          cursor: se-resize;
-          width: 16px;
-          height: 16px;
-          right: -5px;
-          bottom: -5px;
-        }
-
-         #help {
-          display: none;
-          font-family: sans-serif;
-          padding: 10px;
-          background: #F6DC7E;
-          color: #E1182B;
-        }
-
-         #help ol, #help h3 {
-          margin: .5em 0;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <title>Nyancat</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="help" data-butter-exclude>
-      <h3>Images:</h3>
-      <ol>
-        <li>Drag an image plugin from the tray to a target.</li>
-        <li>Click and drag to move it around.</li>
-        <li>Drop an image on it from your desktop.</li>
-        <li>Try resizing it with the handle at the bottom right.</li>
-      </ol>
-      <h3>Zoinks</h3>
-      <ol>
-        <li>Click to drag.</li>
-        <li>Double click to edit text.</li>
-      </ol>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1 class="slideRight">Nyan Cat Party</h1>
+      </div>
     </div>
-
-    <div id="video-container">
-      <div id="video-overlay-top" data-butter="target"></div>
-      <div id="video-overlay-bottom" data-butter="target"></div>
-      <video id="main" data-butter="media" controls>
-        <source src="http://archive.org/download/SFGTV2_20110315_160000/SFGTV2_20110315_160000.mp4?t=1/31&ignore=x.mp4"></source>
-        <source src="butter/external/popcorn-js/test/trailer.ogv"></source>
-      </video>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/QH2-TGUlwu4?autoplay=1&cc_load_policy=1rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-xs-12 col-sm-6 white">
+        <h4><i>NYAAAN NYAN NYAN.</i> That is kitty speak for “Nyan Cat is the best thing to ever happen to the internet.”</h4> <p> Take an 8-bit image of a pop tart cat flying through space on a rainbow and set catchy music in the background, and you have GOLD! I don’t want this meme to ever end.</p>
+      </div>
     </div>
-
-<script src="js/archive-browser.js"></script>
+    <div class="row">
+      <div class="col-xs-12 text-center form-pad">
+        <h3>Join the party!</h3>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Nyan Cat">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="nyancat@example.com">
+          </div>
+            <button type="submit" class="btn btn-default">Sign me up!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
 </body>
 </html>
